@@ -83,7 +83,7 @@ function Board() {
                     <td className="tile"></td>
                     <td className="tile"></td>
                     <td className="tile"></td>
-                    <td className="tile"><h2 id="dragable_letter_fixed" draggable="false">B</h2></td>
+                    <td className="tile"><div className="wrapper"><h2 id="dragable_letter_fixed" draggable="false">B</h2><div className="mini_score">3</div></div></td>
                     <td className="tile"></td>
                     <td className="double">DW</td>
                     <td className="tile"></td>

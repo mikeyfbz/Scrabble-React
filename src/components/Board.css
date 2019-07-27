@@ -35,19 +35,11 @@
     background-color: rgb(249, 38, 53);
 }
 
-/* .triple:before {
-    content: "TW";
-} */
-
 .double {
     width: 50px;
     height: 50px;
     background-color: rgb(252, 216, 89);
 }
-
-/* .double:before {
-    content: "DW";
-} */
 
 .double_letter {
     width: 50px;
@@ -55,22 +47,24 @@
     background-color: rgb(190, 219, 254);
 }
 
-/* .double_letter:before {
-    content: "DL";
-} */
-
 .triple_letter {
     width: 50px;
     height: 50px;
     background-color: rgb(17, 140, 233);
 }
 
-/* .triple_letter:before {
-    content: "TL";
-} */
-
 .hovered {
     background: lightgrey;
+}
+
+.wrapper {
+    position: relative;
+}
+
+.mini_score {
+    position: absolute;
+    bottom: 3px;
+    right: 6px;
 }
 
 #letters {
