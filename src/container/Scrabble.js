@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
+import Board from '../components/Board';
 
 class Scrabble extends Component {
     super() {
@@ -8,7 +9,9 @@ class Scrabble extends Component {
     render() {
 
         return (
-            <h1>Hi</h1>
+            <Fragment>
+                <Board />
+            </Fragment>
         )
     }
 
