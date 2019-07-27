@@ -1,0 +1,10 @@
+.player-options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.individual-option {
+    border: 1px solid black;
+    width: 150px;
+}
