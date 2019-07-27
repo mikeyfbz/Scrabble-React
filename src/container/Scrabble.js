@@ -18,10 +18,16 @@ class Scrabble extends Component {
                     name: "Mikey",
                     score: 1
                 }
-            }
+            },
+            tiles: []
         }
     }
 
+    componentDidMount() {
+    fetch('http://localhost:3001/api/scrabble')
+        .then(res => res.json())
+        .then((data) => this.setState({ tiles: data }))
+    }
 
     render() {
 
