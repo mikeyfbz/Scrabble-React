@@ -1,265 +1,267 @@
 import React, { Component } from 'react';
 import './Board.css';
 
-function Board () {
+function Board() {
 
     return (
         <table id="board_table">
-            <tr> 
-                <td class="triple">TW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple">TW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple">TW</td>
-            </tr>
-            <tr> 
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-            </tr>
-            <tr>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-            </tr>
-            <tr>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-            </tr>
-            <tr>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"><h2 id="dragable_letter_fixed" draggable="false">B</h2></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-            </tr>
-            <tr>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"><h2 id="dragable_letter_fixed" draggable="false">E</h2></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-            </tr>
-            <tr>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="double_letter"><h2 id="dragable_letter_fixed" draggable="false">L</h2></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-            </tr>
-            <tr> 
-                <td class="triple">TW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"><h2 id="dragable_letter_fixed" draggable="false">H</h2></td>
-                <td class="tile"><h2 id="dragable_letter_fixed" draggable="false">E</h2></td>
-                <td class="double"><h2 id="dragable_letter_fixed" draggable="false">L</h2></td>
-                <td class="tile"><h2 id="dragable_letter_fixed" draggable="false">L</h2></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple">TW</td>
-            </tr>
-            <tr>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-            </tr>
-            <tr>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-            </tr>
-            <tr>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-            </tr>
-            <tr>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-            </tr>
-            <tr>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-            </tr>
-            <tr> 
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple_letter">TL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double">DW</td>
-                <td class="tile"></td>
-            </tr>
-            <tr> 
-                <td class="triple">TW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple">TW</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="double_letter">DL</td>
-                <td class="tile"></td>
-                <td class="tile"></td>
-                <td class="triple">TW</td>
-            </tr>
+            <tbody>
+                <tr>
+                    <td className="triple">TW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple">TW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple">TW</td>
+                </tr>
+                <tr>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                </tr>
+                <tr>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                </tr>
+                <tr>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                </tr>
+                <tr>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"><h2 id="dragable_letter_fixed" draggable="false">B</h2></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                </tr>
+                <tr>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"><h2 id="dragable_letter_fixed" draggable="false">E</h2></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                </tr>
+                <tr>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="double_letter"><h2 id="dragable_letter_fixed" draggable="false">L</h2></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                </tr>
+                <tr>
+                    <td className="triple">TW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"><h2 id="dragable_letter_fixed" draggable="false">H</h2></td>
+                    <td className="tile"><h2 id="dragable_letter_fixed" draggable="false">E</h2></td>
+                    <td className="double"><h2 id="dragable_letter_fixed" draggable="false">L</h2></td>
+                    <td className="tile"><h2 id="dragable_letter_fixed" draggable="false">L</h2></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple">TW</td>
+                </tr>
+                <tr>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                </tr>
+                <tr>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                </tr>
+                <tr>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                </tr>
+                <tr>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                </tr>
+                <tr>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                </tr>
+                <tr>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple_letter">TL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double">DW</td>
+                    <td className="tile"></td>
+                </tr>
+                <tr>
+                    <td className="triple">TW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple">TW</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="double_letter">DL</td>
+                    <td className="tile"></td>
+                    <td className="tile"></td>
+                    <td className="triple">TW</td>
+                </tr>
+            </tbody>
         </table>
     )
 }
