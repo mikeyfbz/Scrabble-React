@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './ScoreBoard.css'
 
 function ScoreBoard (props) {

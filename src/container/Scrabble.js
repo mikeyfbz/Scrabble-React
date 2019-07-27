@@ -18,10 +18,19 @@ class Scrabble extends Component {
                     name: "Mikey",
                     score: 1
                 }
-            }
+            },
+            options: ["Play", "Pass", "Swap"], 
+            turn: 1
         }
     }
 
+    handleChangeTurn = () => {
+        if(this.state.turn === 1) {
+            this.setState({ turn: 2 })
+        } else {
+            this.setState({ turn: 1 })
+        }
+    }
 
     render() {
 
@@ -32,7 +41,7 @@ class Scrabble extends Component {
                 <Board />
                 <div className="player-stuff">
                 <TileRack />
-                <PlayerOptions />
+                <PlayerOptions options={this.state.options} turn={this.handleChangeTurn} />
                 </div>
             </Fragment>
         )
