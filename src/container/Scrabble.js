@@ -19,18 +19,37 @@ class Scrabble extends Component {
                     score: 1
                 }
             },
+<<<<<<< HEAD
+=======
+            options: ["Play", "Pass", "Swap"], 
+            turn: 1, 
+>>>>>>> develop
             tiles: []
         }
     }
 
+<<<<<<< HEAD
     componentDidMount() {
     fetch('http://localhost:3001/api/scrabble')
         .then(res => res.json())
         .then((data) => this.setState({ tiles: data }))
+=======
+    handleChangeTurn = () => {
+        if(this.state.turn === 1) {
+            this.setState({ turn: 2 })
+        } else {
+            this.setState({ turn: 1 })
+        }
+>>>>>>> develop
+    }
+
+    componentDidMount() {
+        fetch('http://localhost:3001/api/scrabble')
+            .then(res => res.json())
+            .then(data => this.setState({ tiles: data }))
     }
 
     render() {
-
         return (
             <Fragment>
                 <h1>Scrabble-ish</h1>
@@ -38,7 +57,7 @@ class Scrabble extends Component {
                 <Board />
                 <div className="player-stuff">
                 <TileRack />
-                <PlayerOptions />
+                <PlayerOptions options={this.state.options} turn={this.handleChangeTurn} />
                 </div>
             </Fragment>
         )
