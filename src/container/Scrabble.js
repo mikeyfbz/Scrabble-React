@@ -87,7 +87,6 @@ class Scrabble extends Component {
             sevenTiles.push(tilesArray[i]);
             tilesArray.splice(i, 1)
         }
-        console.log(sevenTiles, tilesArray)
         this.setState((prevState) => ({
             players: {
                 ...prevState.players,
