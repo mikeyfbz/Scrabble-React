@@ -16,7 +16,7 @@ function TileRack ({players, turn}) {
     let letters = players[`player${currentPlayer}`].tiles;
 
     const lettersArray = letters.map((letter, index) => {
-        return <div className="wrapper" ><h2 className="tileracktile" key={index}>{letter.letter}</h2><div className="mini_score">{letter.value}</div></div>
+        return <div key={index} className="wrapper" ><h2 className="tileracktile" >{letter.letter}</h2><div className="mini_score">{letter.value}</div></div>
     })
     
     return (
