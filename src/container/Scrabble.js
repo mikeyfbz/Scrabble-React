@@ -54,8 +54,23 @@ class Scrabble extends Component {
             unsortedTiles[index] = temp;
         }
         this.setState((prevState) => {
-            return ({ tiles: unsortedTiles})
+            return ({ tiles: unsortedTiles })
         })
+        this.state.players.forEach((player) => {
+            this.distributeTiles(player)
+        })
+    }
+
+    distributeTiles = (player) => {
+        let sevenTiles = []
+        for (let i = 0; i < 7; i++) {
+            sevenTiles.push(this.state.tiles[i]);
+        }
+        this.setState((prevState) => {
+            let players = Object.assign({}, prevState.players);
+            let player = Object.assign({}, players.player);
+            player.tiles = sevenTiles;
+        });
     }
 
     render() {

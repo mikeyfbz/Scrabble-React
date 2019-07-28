@@ -10,7 +10,7 @@ function Tile({ tiles }) {
     })
 
     return (
-        <div class="tileHolder">
+        <div className="tileHolder">
             {allTiles[0]}
         </div>
     )
