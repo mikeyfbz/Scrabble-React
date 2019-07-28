@@ -4,7 +4,6 @@ import TileRack from '../components/TileRack';
 import ScoreBoard from '../components/ScoreBoard';
 import PlayerOptions from '../components/PlayerOptions';
 import './Scrabble.css'
-import Tile from '../components/Tile';
 
 class Scrabble extends Component {
     constructor(props) {
@@ -67,7 +66,6 @@ class Scrabble extends Component {
             sevenTiles.push(tilesArray[i]);
             tilesArray.splice(i, 1)
         }
-        console.log(sevenTiles, tilesArray)
         this.setState((prevState) => ({
             players: {
                 ...prevState.players,
@@ -109,7 +107,6 @@ class Scrabble extends Component {
                     <TileRack players={this.state.players} turn={this.state.turn} />
                     <PlayerOptions options={this.state.options} turn={this.handleChangeTurn} />
                 </div>
-                <Tile tiles={this.state.tiles} />
             </Fragment>
         )
     }

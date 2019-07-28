@@ -1,5 +1,6 @@
 import React from 'react';
 import './TileRack.css';
+import Tile from './Tile';
 
 function TileRack ({players, turn}) {
 
