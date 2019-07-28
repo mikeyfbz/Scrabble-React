@@ -20,7 +20,8 @@ class Scrabble extends Component {
                 }
             },
             options: ["Play", "Pass", "Swap"], 
-            turn: 1
+            turn: 1, 
+            tiles: []
         }
     }
 
@@ -32,8 +33,13 @@ class Scrabble extends Component {
         }
     }
 
-    render() {
+    componentDidMount() {
+        fetch('http://localhost:3001/api/scrabble')
+            .then(res => res.json())
+            .then(data => this.setState({ tiles: data }))
+    }
 
+    render() {
         return (
             <Fragment>
                 <h1>Scrabble-ish</h1>
