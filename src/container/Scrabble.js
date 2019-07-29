@@ -25,6 +25,8 @@ class Scrabble extends Component {
             options: ["Play", "Pass", "Swap"],
             turn: 1,
             tiles: [],
+            checkWord: "ffrr",
+            validWord: false
         }
     }
 
@@ -41,6 +43,16 @@ class Scrabble extends Component {
             .then(res => res.json())
             .then(data => this.setState({ tiles: data },
                 () => this.randomise()))
+        
+        fetch('http://localhost:3001/api/scrabblewords',{
+            method: "POST",
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({word: this.state.checkWord})
+        })
+            .then(res => res.json())
+            .then(data => {
+                this.setState({validWord: data ===  null ? false : true})
+            })
     }
 
     randomise = () => {
