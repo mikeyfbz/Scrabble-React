@@ -8,6 +8,8 @@
     "express": "^4.17.1",
     "mongodb": "^3.3.0-beta2",
     "react": "^16.8.6",
+    "react-dnd": "^9.3.2",
+    "react-dnd-html5-backend": "^9.3.2",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
   },
