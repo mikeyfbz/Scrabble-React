@@ -4,6 +4,7 @@ import TileRack from '../components/TileRack';
 import ScoreBoard from '../components/ScoreBoard';
 import PlayerOptions from '../components/PlayerOptions';
 import './Scrabble.css'
+import Tile from '../components/Tile';
 
 class Scrabble extends Component {
     constructor(props) {

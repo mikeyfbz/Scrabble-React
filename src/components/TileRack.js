@@ -2,9 +2,7 @@ import React from 'react';
 import './TileRack.css';
 import Tile from './Tile';
 
-function TileRack ({players, turn}) {
-
-
+function TileRack({ players, turn }) {
 
     let currentPlayer = 1;
 
@@ -17,9 +15,9 @@ function TileRack ({players, turn}) {
     let letters = players[`player${currentPlayer}`].tiles;
 
     const lettersArray = letters.map((letter, index) => {
-        return <div key={index} className="wrapper" ><h2 className="tileracktile" >{letter.letter}</h2><div className="mini_score">{letter.value}</div></div>
+        return <Tile key={index} tile={letter} index={index} />
     })
-    
+
     return (
         <div className='tilerack'>{lettersArray}</div>
     )
